@@ -1,0 +1,70 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    padding-top: 70px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-weight: 600;
+}
+
+.hero p {
+    opacity: 0.9;
+}
+
+/* Cards */
+.food-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.food-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.price {
+    font-weight: 600;
+    color: #ff512f;
+}
+
+/* Cart */
+.cart {
+    position: fixed;
+    top: 80px;
+    right: -350px;
+    width: 320px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    transition: 0.4s ease;
+    z-index: 2000;
+}
+
+.cart.show {
+    right: 20px;
+}
+
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+}
